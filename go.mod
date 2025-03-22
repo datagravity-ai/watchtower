@@ -2,8 +2,6 @@ module github.com/containrrr/watchtower
 
 go 1.24.1
 
-toolchain go1.24.1
-
 require (
 	github.com/containrrr/shoutrrr v0.8.0
 	github.com/distribution/reference v0.5.0
