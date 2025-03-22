@@ -3,7 +3,6 @@ package types
 import (
 	"strings"
 
-	"github.com/docker/docker/api/types/container"
 	types "github.com/docker/docker/api/types/image"
 	dc "github.com/docker/docker/api/types/container"
 )
@@ -45,7 +44,7 @@ func shortID(longID string) string {
 
 // Container is a docker container running an image
 type Container interface {
-	ContainerInfo() *container.InspectResponse
+	ContainerInfo() *dc.InspectResponse
 	ID() ContainerID
 	IsRunning() bool
 	Name() string
