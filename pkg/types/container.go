@@ -3,7 +3,8 @@ package types
 import (
 	"strings"
 
-	"github.com/docker/docker/api/types"
+	"github.com/docker/docker/api/types/container"
+	types "github.com/docker/docker/api/types/image"
 	dc "github.com/docker/docker/api/types/container"
 )
 
