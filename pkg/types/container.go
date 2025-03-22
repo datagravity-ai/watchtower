@@ -44,7 +44,7 @@ func shortID(longID string) string {
 
 // Container is a docker container running an image
 type Container interface {
-	ContainerInfo() *types.ContainerJSON
+	ContainerInfo() *container.InspectResponse
 	ID() ContainerID
 	IsRunning() bool
 	Name() string
@@ -59,7 +59,7 @@ type Container interface {
 	IsWatchtower() bool
 	StopSignal() string
 	HasImageInfo() bool
-	ImageInfo() *types.ImageInspect
+	ImageInfo() *types.InspectResponse
 	GetLifecyclePreCheckCommand() string
 	GetLifecyclePostCheckCommand() string
 	GetLifecyclePreUpdateCommand() string
