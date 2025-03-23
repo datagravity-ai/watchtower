@@ -5,7 +5,7 @@ import (
 
 	"github.com/containrrr/watchtower/internal/actions"
 	"github.com/containrrr/watchtower/pkg/types"
-	dockerTypes "github.com/docker/docker/api/types"
+	"github.com/docker/docker/api/types/image"
 	dockerContainer "github.com/docker/docker/api/types/container"
 	"github.com/docker/go-connections/nat"
 
